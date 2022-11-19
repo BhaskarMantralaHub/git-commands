@@ -63,4 +63,5 @@ git push origin <branch> --force
  
  
   **How to Delete Already Merged Git Branches**
+ 
  git branch -r --merged master | egrep -v "(^\*|master|dev)" | cut -d/ -f2- | xargs -n 1 git push --delete origin	
